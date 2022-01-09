@@ -11,12 +11,16 @@ import{
   EventDetailsComponent,
   CreateEventComponet,
   EventRouteActivator,
-  EventListResolver
+  EventListResolver,
+  CreateSessionComponent,
+  SessionListComponent,
+  DurationPipe
 
 }from './events/index';
 
 import { EventsAppComponent } from './events-app.component';
 import { NavBarComponent } from './nav/navbar.component';
+import { CollapsibleWellComponet } from './common/collapsible-well.component';
 import { ToastrService } from './common/toastr.service';
 import { appRoutes } from './routes';
 import { Error404Component } from './erros/404.component';
@@ -29,7 +33,11 @@ import { Error404Component } from './erros/404.component';
     EventDetailsComponent,
     NavBarComponent,
     CreateEventComponet,
-    Error404Component
+    Error404Component,
+    CreateSessionComponent,
+    SessionListComponent,
+    CollapsibleWellComponet,
+    DurationPipe
   ],
   imports: [
     BrowserModule,
